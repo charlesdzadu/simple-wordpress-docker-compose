@@ -31,11 +31,11 @@ services:
     networks:
       - app-network
 
-  volumes:
-    wordpress:
-    dbdata:
-    
-  networks:
-    app-network:
-      driver: bridge
+volumes:
+  wordpress:
+  dbdata:
+
+networks:
+  app-network:
+    driver: bridge
 
