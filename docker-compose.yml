@@ -30,7 +30,11 @@ services:
       - wordpress:/var/www/html
     networks:
       - app-network
-  
+
+  volumes:
+    wordpress:
+    dbdata:
+    
   networks:
     app-network:
       driver: bridge
