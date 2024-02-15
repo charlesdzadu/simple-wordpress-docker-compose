@@ -30,4 +30,8 @@ services:
       - wordpress:/var/www/html
     networks:
       - app-network
+  
+  networks:
+    app-network:
+      driver: bridge
 
